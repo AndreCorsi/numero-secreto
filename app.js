@@ -1,6 +1,6 @@
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1' , 'Jogo do número secreto'); //Linha 22 index.html
-    exibirTextoNaTela('p' , 'Escolha um número entre 1 e 10'); //Linha 23 index.html
+    exibirTextoNaTela('p' , 'Escolha um número entre 1 e 100'); //Linha 23 index.html
 }
 /*
 let titulo = document.querySelector('h1');
@@ -48,7 +48,7 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    let numeroEscolhido = parseInt(Math.random() * 10 + 1); // Gera um numero entre 1 e 10 e armazena em numeroEscolhido
+    let numeroEscolhido = parseInt(Math.random() * 100 + 1); // Gera um numero entre 1 e 10 e armazena em numeroEscolhido
     let quantidadeDeElementosNaLista = listaDeNumerosSorteados.length; //length = tamanho da lista
 
     if (quantidadeDeElementosNaLista == 10) { //Se a quantidade de itens na lista for igual a 10 esvaziar a lista
